@@ -1,6 +1,6 @@
-import express from "express";
-import routes from "./routes";
-// import './database'; (só depois com sequelize)
+import express from 'express';
+import routes from './routes';
+import './database';
 
 class App {
   constructor() {

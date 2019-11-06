@@ -92,6 +92,9 @@ yarn sequelize db:seed:all
 
 Agora você tem um usuário na sua base de dados, utilize esse usuário para todos logins daqui pra frente.
 
+Se liga, não vai ter UserController nem model User. É só autenticação do user admin q já existe.
+Então, o q vou fazer é uma SessionController
+
 - A autenticação deve ser feita utilizando JWT.
 - Realize a validação dos dados de entrada;
 

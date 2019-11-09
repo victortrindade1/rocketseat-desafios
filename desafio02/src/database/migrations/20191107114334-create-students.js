@@ -1,6 +1,6 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('users', {
+    return queryInterface.createTable('students', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -16,19 +16,23 @@ module.exports = {
         unique: true,
         type: Sequelize.STRING,
       },
-      password_hash: {
-        type: Sequelize.STRING,
+      age: {
         allowNull: false,
+        type: Sequelize.INTEGER,
+      },
+      weight: {
+        allowNull: false,
+        type: Sequelize.FLOAT,
+      },
+      height: {
+        allowNull: false,
+        type: Sequelize.FLOAT,
       },
       created_at: {
-        // Data de criação do cadastro
-        // Preenchido automático
         type: Sequelize.DATE,
         allowNull: false,
       },
       updated_at: {
-        // Data de edição do cadastro
-        // Preenchido automático
         type: Sequelize.DATE,
         allowNull: false,
       },
@@ -36,6 +40,6 @@ module.exports = {
   },
 
   down: queryInterface => {
-    return queryInterface.dropTable('users');
+    return queryInterface.dropTable('students');
   },
 };

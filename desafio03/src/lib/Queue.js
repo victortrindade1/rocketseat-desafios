@@ -1,9 +1,11 @@
 import Bee from 'bee-queue';
 import NewStudentMail from '../app/jobs/NewStudentMail';
+import AddCreditsMail from '../app/jobs/AddCreditsMail';
+import HelpOrderMail from '../app/jobs/HelpOrderMail';
 import redisConfig from '../config/redis';
 
 // Put all background jobs here
-const jobs = [NewStudentMail];
+const jobs = [NewStudentMail, AddCreditsMail, HelpOrderMail];
 
 class Queue {
   constructor() {

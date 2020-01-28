@@ -2,18 +2,15 @@ import React from 'react';
 import './PostList-Post-Comment.css';
 import PerfilPhoto from '../../../PerfilPhoto/PerfilPhoto';
 
-const Comment = () => {
+const Comment = ({ data }) => {
   return (
     <div className="box-comment">
       <div className="photo">
-        <PerfilPhoto />
+        <PerfilPhoto perfilPhoto={data.author.avatar} />
       </div>
       <div className="comment">
-        <span className="name-comment">Teta Tetéia</span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-        beatae labore! Neque, eos quas recusandae consequuntur impedit vel iure
-        nostrum id. Exercitationem natus, perspiciatis eligendi quas enim
-        aliquam esse minima?
+        <span className="name-comment">{data.author.name}</span>
+        {data.content}
       </div>
     </div>
   );

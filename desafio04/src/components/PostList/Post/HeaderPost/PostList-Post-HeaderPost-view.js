@@ -2,13 +2,14 @@ import React from 'react';
 import './PostList-Post-HeaderPost.css';
 
 import PerfilPhoto from '../../../PerfilPhoto/PerfilPhoto';
-const HeaderPost = () => {
+
+const HeaderPost = ({ data }) => {
   return (
     <div className="perfil">
-      <PerfilPhoto />
+      <PerfilPhoto perfilPhoto={data.author.avatar} />
       <div className="box-name-date">
-        <div className="name-perfil">Julio Tetinha</div>
-        <div className="date-post">04 Jun 2019</div>
+        <div className="name-perfil">{data.author.name}</div>
+        <div className="date-post">{data.date}</div>
       </div>
     </div>
   );

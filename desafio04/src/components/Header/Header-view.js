@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className="header">
       <Logo className="logo" />
-      <Meuperfil className="meu-perfil" />
+      <Meuperfil />
     </div>
   );
 };

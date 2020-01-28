@@ -1,3 +1,12 @@
+.post {
+  width: 700px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin: 20px auto auto auto;
+  padding: 20px;
+}
+
 .body-post {
   color: #3e3e3e;
   padding-top: 15px;
